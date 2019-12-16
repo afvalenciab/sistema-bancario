@@ -1,0 +1,128 @@
+.overlay__modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  display: flex;
+}
+
+.modal__container {
+  padding: 30px;
+  margin: auto;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  height: auto;
+  position: relative;
+  z-index: 4;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #fff;
+  font-family: 'Comfortaa';
+
+  .close {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+
+    figure {
+      margin: 0;
+      img {
+        vertical-align: top;
+        width: 20px;
+      }
+    }
+  }
+
+  h2 {
+    margin: 0;
+    color: #00B7B0;
+  }
+
+  .button {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 16px;
+    padding: 10px 22px;
+    font-family: 'Comfortaa';
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3D4975;
+    font-size: 16px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button:active {
+    transform: scale(.99);
+  }
+
+  .icon {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .line {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    color: green;
+  }
+
+  .input {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 16px;
+    padding: 10px 22px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #767676;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .input:focus {
+    border: 1px solid #00B7B0;
+    z-index: 1;
+  }
+}
+
+.icon-close:before {
+  content: '\e900';
+  cursor: pointer;
+}
+
+// @media screen and (max-width: 620px) {
+//   .signin {
+//     z-index: 3;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     padding: 20px 10px;
+//     overflow: auto;
+//   }
+// }
+
+// @media screen and (max-width: 326px) {
+//   .signin {
+//     .button {
+//       font-size: 14px;
+//     }
+//   }
+// }
