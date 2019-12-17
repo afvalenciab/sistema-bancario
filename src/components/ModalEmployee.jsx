@@ -53,7 +53,6 @@ const ModalEmployee = (props) => {
             <figure>
               <img src={close} alt="close"/>
             </figure>
-            {/* <i className='icon-close icon' onClick={props.handleCloseClick} /> */}
           </div>
           <h2>Nuevo Empleado</h2>
           <hr className='line' />
